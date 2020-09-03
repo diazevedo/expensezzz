@@ -12,6 +12,10 @@ const CustomRouter = ({ component: Component, isPrivate = false, ...rest }) => {
     return <Redirect to="/" />;
   }
 
+  if (signed && !isPrivate) {
+    return <Redirect to="/dashboard" />;
+  }
+
   const Layout = signed ? DefaultLayout : AuthLayout;
 
   return (

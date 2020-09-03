@@ -1,17 +1,19 @@
-import React from "react";
-import { createBrowserHistory } from "history";
-import { Router, Link } from "react-router-dom";
-import Routes from "./routes/index";
+import React from 'react';
 
-const history = createBrowserHistory();
+import { Router } from 'react-router-dom';
+
+import history from './services/history';
+import Routes from './routes/index';
+
+import ResetCSS from './styles/reset';
+import BaseCSS from './styles/base';
 
 function App() {
   return (
     <Router history={history}>
-      <Link to="/">HOME</Link>
-      <Link to="/register">REGISTER</Link>
-      <Link to="/dashboard">dashboard</Link>
-      <Routes></Routes>
+      <ResetCSS />
+      <BaseCSS />
+      <Routes />
     </Router>
   );
 }
