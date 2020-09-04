@@ -21,11 +21,11 @@ export const ListItem = styled.li`
 export const Link = styled(NavLink)`
   display: flex;
   align-items: center;
-  color: #a6a9b7;
+  color: inherit;
 
   &.active {
-    filter: invert(0%) sepia(89%) saturate(100%) hue-rotate(340deg)
-      brightness(0%) contrast(100%);
+    filter: invert(0%) sepia(92%) saturate(0%) hue-rotate(19deg)
+      brightness(105%) contrast(1000%);
   }
 `;
 

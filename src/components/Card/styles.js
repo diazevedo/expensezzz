@@ -11,7 +11,7 @@ export const Container = styled.div`
   );
   color: #fff;
 
-  box-shadow: 0px 30px 20px -15px rgba(252, 159, 53, 0.6);
+  box-shadow: 0px 30px 45px -25px rgba(252, 159, 53, 0.6);
 
   margin-bottom: 3rem;
 `;
