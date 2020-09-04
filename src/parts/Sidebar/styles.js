@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const Container = styled.aside``;
-
-export const MenuContainer = styled.nav`
-  padding: 4rem;
+export const Container = styled.aside`
+  padding: 4rem 3rem;
+  border: solid #e8e8e8 1px;
 `;
+
+export const MenuContainer = styled.nav``;
 
 export const MenuList = styled.ul`
   font-size: 1.4rem;

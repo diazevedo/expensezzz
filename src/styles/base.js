@@ -9,7 +9,7 @@ const BaseCSS = createGlobalStyle`
   body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
 
     #root {
       height: 100%;
