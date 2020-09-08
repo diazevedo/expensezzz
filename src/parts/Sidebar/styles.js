@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const Container = styled.aside`
   padding: 4rem 3rem;
-  border: solid #e8e8e8 1px;
+  border-right: solid #e8e8e8 1px;
 `;
 
 export const MenuContainer = styled.nav``;
