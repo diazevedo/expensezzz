@@ -12,7 +12,7 @@ const Sidebar = () => {
       <S.MenuContainer>
         <S.MenuList>
           {items.map(({ url, alt, label, image }) => (
-            <S.ListItem>
+            <S.ListItem key={label}>
               <S.Link to={url}>
                 <S.Icon src={image} alt={alt} />
                 <span>{label}</span>

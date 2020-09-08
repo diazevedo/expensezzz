@@ -30,6 +30,8 @@ const BaseCSS = createGlobalStyle`
 
   button, input, a {
     outline:none;
+    background: none;
+    border: none;
   }
 
 `;

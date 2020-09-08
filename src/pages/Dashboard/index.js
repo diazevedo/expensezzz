@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Container } from './styles';
 
+import Table from '../../components/Table';
+
 const Dashboard = () => {
-  return <h1></h1>;
+  return <Table />;
 };
 
 export default Dashboard;

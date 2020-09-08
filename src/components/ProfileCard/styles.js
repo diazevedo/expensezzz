@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
+import { flex } from '../../styles/reusable';
+
 export const Container = styled.div`
   width: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  ${flex};
 `;
 
 export const Name = styled.p`

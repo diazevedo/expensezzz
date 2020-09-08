@@ -1,12 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
+import { flex } from '../../styles/reusable';
 import notification from '../../assets/icons/notification.svg';
-
-const flex = css`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
 
 export const Container = styled.header`
   width: 100%;
