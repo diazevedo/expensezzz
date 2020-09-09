@@ -1,0 +1,28 @@
+import React from 'react';
+import ProfileCard from '../../components/ProfileCard';
+import Checkbox from '../../components/Checkbox';
+import Status from '../../components/Status';
+
+import * as S from './styles';
+
+function TrBody({ label, avatar, name, amount, date, state }) {
+  const [selected, setSelected] = React.useState(false);
+
+  return (
+    <S.Tr selected={selected}>
+      <td>
+        <Checkbox label={label} onCheck={() => setSelected((s) => !s)} />
+      </td>
+      <S.TDProfile>
+        <ProfileCard avatar_url={avatar} name={name} />
+      </S.TDProfile>
+      <td>{amount}</td>
+      <td>{date}</td>
+      <td>
+        <Status state={state} />
+      </td>
+    </S.Tr>
+  );
+}
+
+export default TrBody;

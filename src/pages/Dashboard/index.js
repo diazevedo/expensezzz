@@ -5,7 +5,11 @@ import { Container } from './styles';
 import Table from '../../components/Table';
 
 const Dashboard = () => {
-  return <Table />;
+  return (
+    <Container>
+      <Table />
+    </Container>
+  );
 };
 
 export default Dashboard;

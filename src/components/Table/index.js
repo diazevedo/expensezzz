@@ -1,10 +1,9 @@
 import React from 'react';
-import ProfileCard from '../../components/ProfileCard';
-import Checkbox from '../../components/Checkbox';
-import Status from '../../components/Status';
+import TrBody from '../../components/TrBody';
 
 import * as S from './styles';
 import menuDots from '../../assets/icons/menu-dots.svg';
+import Isaiah from '../../assets/images/isaiah.png';
 
 const headers = [
   {
@@ -22,6 +21,33 @@ const headers = [
   {
     text: 'date',
     key: '3',
+  },
+];
+
+const data = [
+  {
+    id: 'DC01',
+    person: 'Lucas Wells',
+    avatar_url: 'https://randomuser.me/api/portraits/men/0.jpg',
+    amount: '$680',
+    date: '01-10-2018',
+    state: 2,
+  },
+  {
+    id: 'DC02',
+    person: 'Carl Lane',
+    avatar_url: 'https://randomuser.me/api/portraits/thumb/women/68.jpg',
+    amount: '$750',
+    date: '01-10-2018',
+    state: 1,
+  },
+  {
+    id: 'DC03',
+    person: 'Isaiah Howard',
+    avatar_url: Isaiah,
+    amount: '$450',
+    date: '01-10-2018',
+    state: 2,
   },
 ];
 
@@ -43,41 +69,17 @@ function Table({ trs = headers }) {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <Checkbox label="DC01" />
-            </td>
-            <S.TDProfile>
-              <ProfileCard name="Lucas Wells" />
-            </S.TDProfile>
-            <td>$680</td>
-            <td>01-10-2018</td>
-            <td>
-              <Status state={2} />
-            </td>
-          </tr>
-          <tr>
-            <td>DC01</td>
-            <S.TDProfile>
-              <ProfileCard name="Lucas Wells" />
-            </S.TDProfile>
-            <td>$680</td>
-            <td>01-10-2018</td>
-            <td>
-              <Status state={1} />
-            </td>
-          </tr>
-          <tr>
-            <td>DC01</td>
-            <S.TDProfile>
-              <ProfileCard name="Lucas Wells" />
-            </S.TDProfile>
-            <td>$680</td>
-            <td>01-10-2018</td>
-            <td>
-              <Status state={1} />
-            </td>
-          </tr>
+          {data.map(({ id, person, avatar_url, amount, date, state }) => (
+            <TrBody
+              key={id}
+              label={id}
+              avatar={avatar_url}
+              name={person}
+              amount={amount}
+              date={date}
+              state={state}
+            />
+          ))}
         </tbody>
       </S.Table>
     </S.Section>

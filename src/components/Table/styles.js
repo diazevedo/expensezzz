@@ -34,27 +34,19 @@ export const Table = styled.table`
     color: #fffbfc;
   }
 
-  & tr {
-    border-bottom: 1px #353b66 solid;
+  & label {
+    margin-left: 2rem;
   }
 
-  & tr:last-child {
-    border: none;
+  & tr th:first-child {
+    text-indent: 6rem;
+    text-align: left;
   }
 
   th {
     text-transform: capitalize;
     height: 5rem;
     vertical-align: middle;
-  }
-
-  tbody > tr {
-    height: 7.5rem;
-  }
-
-  tbody > tr > td {
-    vertical-align: middle;
-    text-align: center;
   }
 `;
 

@@ -4,7 +4,6 @@ import { flex } from '../../styles/reusable';
 export const Label = styled.label`
   ${flex};
   width: 7rem;
-  margin: 0 auto;
   position: relative;
   cursor: pointer;
 
@@ -35,7 +34,7 @@ export const Span = styled.span`
     height: 1rem;
     border: solid #000;
     border-width: 0 4px 4px 0;
-    transform: rotate(25deg) translate(-75%, -36%);
+    transform: rotate(25deg) translate(-85%, -36%);
     display: none;
   }
 `;
