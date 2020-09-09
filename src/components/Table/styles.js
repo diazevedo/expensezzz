@@ -53,7 +53,6 @@ export const Table = styled.table`
   }
 
   tbody > tr > td {
-    padding: 1em;
     vertical-align: middle;
     text-align: center;
   }

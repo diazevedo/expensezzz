@@ -19,8 +19,8 @@ export const Label = styled.label`
 
 export const Span = styled.span`
   background: transparent;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   display: block;
   border: 1px solid #fff;
   position: absolute;

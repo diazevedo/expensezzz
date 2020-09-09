@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileCard from '../../components/ProfileCard';
 import Checkbox from '../../components/Checkbox';
+import Status from '../../components/Status';
 
 import * as S from './styles';
 import menuDots from '../../assets/icons/menu-dots.svg';
@@ -51,7 +52,9 @@ function Table({ trs = headers }) {
             </S.TDProfile>
             <td>$680</td>
             <td>01-10-2018</td>
-            <td>*</td>
+            <td>
+              <Status state={2} />
+            </td>
           </tr>
           <tr>
             <td>DC01</td>
@@ -60,7 +63,9 @@ function Table({ trs = headers }) {
             </S.TDProfile>
             <td>$680</td>
             <td>01-10-2018</td>
-            <td>*</td>
+            <td>
+              <Status state={1} />
+            </td>
           </tr>
           <tr>
             <td>DC01</td>
@@ -69,7 +74,9 @@ function Table({ trs = headers }) {
             </S.TDProfile>
             <td>$680</td>
             <td>01-10-2018</td>
-            <td>*</td>
+            <td>
+              <Status state={1} />
+            </td>
           </tr>
         </tbody>
       </S.Table>
