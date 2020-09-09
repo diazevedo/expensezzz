@@ -34,8 +34,12 @@ export const Table = styled.table`
     color: #fffbfc;
   }
 
-  & > tr {
+  & tr {
     border-bottom: 1px #353b66 solid;
+  }
+
+  & tr:last-child {
+    border: none;
   }
 
   th {
@@ -52,10 +56,6 @@ export const Table = styled.table`
     padding: 1em;
     vertical-align: middle;
     text-align: center;
-  }
-
-  & tr:last-child {
-    border: none;
   }
 `;
 

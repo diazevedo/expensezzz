@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfileCard from '../../components/ProfileCard';
+import Checkbox from '../../components/Checkbox';
 
 import * as S from './styles';
 import menuDots from '../../assets/icons/menu-dots.svg';
@@ -42,7 +43,9 @@ function Table({ trs = headers }) {
         </thead>
         <tbody>
           <tr>
-            <td>DC01</td>
+            <td>
+              <Checkbox label="DC01" />
+            </td>
             <S.TDProfile>
               <ProfileCard name="Lucas Wells" />
             </S.TDProfile>
