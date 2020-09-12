@@ -1,9 +1,11 @@
 import React from 'react';
+import Section from '../../components/Section';
 import TrBody from '../../components/TrBody';
 
 import * as S from './styles';
-import menuDots from '../../assets/icons/menu-dots.svg';
 import Isaiah from '../../assets/images/isaiah.png';
+
+import SectionHeader from '../../components/SectionHeader';
 
 const headers = [
   {
@@ -53,13 +55,8 @@ const data = [
 
 function Table({ trs = headers }) {
   return (
-    <S.Section>
-      <header>
-        <h2>Income</h2>
-        <button>
-          <img src={menuDots} alt="Menu options" />
-        </button>
-      </header>
+    <Section>
+      <SectionHeader title="income" />
       <S.Table>
         <thead>
           <tr>
@@ -82,7 +79,7 @@ function Table({ trs = headers }) {
           ))}
         </tbody>
       </S.Table>
-    </S.Section>
+    </Section>
   );
 }
 

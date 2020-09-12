@@ -12,5 +12,6 @@ export const Wrapper = styled.div`
     float: left;
     height: 100%;
     overflow: hidden;
+    position: fixed;
   }
 `;
