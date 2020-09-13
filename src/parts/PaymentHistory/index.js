@@ -1,14 +1,16 @@
 import React from 'react';
 
+import payments from '../../utils/data/paymentHistory';
+
 import Section from '../../components/Section';
 import SectionHeader from '../../components/SectionHeader';
-import PaymentList from '../../components/PaymentList';
+import TransactionList from '../../components/TransactionList';
 
 const PaymentHistory = () => {
   return (
     <Section>
       <SectionHeader title="payment history " />
-      <PaymentList />
+      <TransactionList items={payments} />
     </Section>
   );
 };
