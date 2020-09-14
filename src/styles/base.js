@@ -11,6 +11,9 @@ const BaseCSS = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
 
+    #root {
+      height: 100%;
+    }
   }
 
   body * {
@@ -30,6 +33,10 @@ const BaseCSS = createGlobalStyle`
     outline:none;
     background: none;
     border: none;
+  }
+
+  p {
+    font-size: 1.4rem;
   }
 
 `;
