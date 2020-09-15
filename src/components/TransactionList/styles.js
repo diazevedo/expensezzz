@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { INCOME } from '../../utils/data/transactions';
 
-import { flex } from '../../styles/reusable';
+import { flex, FlexContainerCenter } from '../../styles/reusable';
 
 export const List = styled.ul`
   overflow: hidden;
@@ -20,11 +20,7 @@ export const List = styled.ul`
   }
 `;
 
-export const LeftContainer = styled.div`
-  display: flex;
-  flex: 1;
-  align-items: center;
-
+export const LeftContainer = styled(FlexContainerCenter)`
   & div:first-child {
     margin-right: 1.2rem;
   }

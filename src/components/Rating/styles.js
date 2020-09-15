@@ -2,9 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  border-bottom: 1px #353b66 solid;
   padding: 0 1.2rem;
   margin: 3rem 0;
+
+  & > svg {
+    margin-right: 0.25rem;
+  }
 `;
 
 export const Rating = styled.div`

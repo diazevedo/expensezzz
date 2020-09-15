@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const flex = css`
   display: flex;
@@ -11,3 +11,9 @@ export const blueGradient =
 
 export const orangeGradient =
   'linear-gradient(85deg,rgba(254, 109, 173, 1) 0%, rgba(252, 159, 53, 1) 100%)';
+
+export const FlexContainerCenter = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+`;

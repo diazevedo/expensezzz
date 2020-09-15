@@ -9,7 +9,7 @@ export const Header = styled.header`
     font-family: 'Mulish', sans-serif;
     font-size: 2.4rem;
     color: #f6f6f8;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: capitalize;
   }
 

@@ -5,6 +5,7 @@ const Section = styled.section`
   border: 1px solid #353b66;
   border-radius: 8px;
   margin-top: 2rem;
+  background: #2a305d;
 `;
 
 export default Section;

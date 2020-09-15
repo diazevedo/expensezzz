@@ -8,7 +8,7 @@ const Rating = () => {
   const startAmount = [0, 1, 2, 3, 4];
 
   const Stars = startAmount.map((item) => (
-    <Star key={item.toString()} full={item < 2} item={item} />
+    <Star key={item.toString()} full={item < 4} />
   ));
 
   return (

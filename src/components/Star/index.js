@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { orangeGradient } from '../../styles/reusable';
+import id from '../../utils/functions/generateID';
 
-const Star = ({ full = false, item }) => {
-  console.log(item);
-  console.log(full);
+const Star = ({ full = false }) => {
   const gradientColors = {
     top: full ? '#FE70A5' : '#5c659d',
     bottom: full ? '#FC9F35' : '#5c659d',
   };
+
+  const linearID = id();
 
   return (
     <svg
@@ -19,7 +19,7 @@ const Star = ({ full = false, item }) => {
     >
       <defs>
         <linearGradient
-          id={`linear-${item}`}
+          id={linearID}
           x1="0%"
           y1="10%"
           x2="00%"
@@ -31,10 +31,10 @@ const Star = ({ full = false, item }) => {
         </linearGradient>
       </defs>
       <path
-        id="Path_Copy_4"
-        data-name="Path Copy 4"
+        id="path_star"
+        data-name="path_star"
         d="M7.583.225l1.842,4.3,4.716.4a.366.366,0,0,1,.212.643l-3.577,3.06,1.072,4.552a.37.37,0,0,1-.554.4L7.241,11.169,3.188,13.582a.37.37,0,0,1-.554-.4L3.707,8.633.129,5.572a.366.366,0,0,1,.212-.643l4.716-.4L6.9.225A.373.373,0,0,1,7.583.225Z"
-        fill={`url(#linear-${item})`}
+        fill={`url(#${linearID})`}
       />
     </svg>
   );
