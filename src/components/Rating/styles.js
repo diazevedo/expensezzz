@@ -17,7 +17,7 @@ export const Rating = styled.div`
   border: #e7e8f2 solid 1px;
   display: inline-block;
 
-  border-radius: 4px;
+  border-radius: 8px;
   text-align: center;
   line-height: 2.8rem;
 
