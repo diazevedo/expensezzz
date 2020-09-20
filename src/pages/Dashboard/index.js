@@ -11,10 +11,10 @@ import LastCosts from '../../parts/LastCosts';
 const Dashboard = () => {
   return (
     <Container>
-      {/* <Table /> */}
-      {/* <PaymentHistory /> */}
-      {/* <MonthlyProfit /> */}
-      {/* <Reviews /> */}
+      <Table />
+      <PaymentHistory />
+      <MonthlyProfit />
+      <Reviews />
       <LastCosts />
     </Container>
   );
