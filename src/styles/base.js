@@ -10,6 +10,13 @@ const BaseCSS = createGlobalStyle`
     height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
+    background: linear-gradient(
+    142deg,
+    rgba(39, 44, 86, 1) 0%,
+    rgba(51, 58, 109, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     #root {
       height: 100%;

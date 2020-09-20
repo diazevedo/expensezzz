@@ -1,11 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background: linear-gradient(
-    142deg,
-    rgba(39, 44, 86, 1) 0%,
-    rgba(51, 58, 109, 1) 100%
-  );
+  height: 100%;
 
   aside {
     float: left;
