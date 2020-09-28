@@ -32,6 +32,9 @@ const Sidebar = () => {
       <S.DarkMode>
         <Switch label="light mode" />
       </S.DarkMode>
+      <S.Footer>
+        <p>© 2019 All Rights Reserved</p>
+      </S.Footer>
     </S.Container>
   );
 };

@@ -54,3 +54,12 @@ export const DarkMode = styled.div`
   width: 21.5rem;
   margin-top: 5rem;
 `;
+
+export const Footer = styled.footer`
+  width: 21.5rem;
+  color: #9db1bc;
+  text-align: center;
+  position: absolute;
+  font-weight: 300;
+  bottom: 2.5rem;
+`;
