@@ -34,3 +34,18 @@ export const Icon = styled.img`
   height: 2rem;
   margin-right: 1.2em;
 `;
+
+export const DownloadSection = styled.div`
+  margin-top: 16rem;
+
+  h4 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    color: #a6a9b7;
+  }
+`;
