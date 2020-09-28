@@ -49,3 +49,8 @@ export const DownloadSection = styled.div`
     color: #a6a9b7;
   }
 `;
+
+export const DarkMode = styled.div`
+  width: 21.5rem;
+  margin-top: 5rem;
+`;

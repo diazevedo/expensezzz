@@ -2,6 +2,8 @@ import React from 'react';
 
 import Card from '../../components/Card';
 import Button from '../../components/Button';
+import Switch from '../../components/Switch';
+
 import * as S from './styles';
 
 import items from '../../utils/data/navigationItems';
@@ -21,12 +23,15 @@ const Sidebar = () => {
             </S.ListItem>
           ))}
         </S.MenuList>
-        <S.DownloadSection>
-          <h4>PDF Report</h4>
-          <p>Download monthly report</p>
-          <Button />
-        </S.DownloadSection>
       </S.MenuContainer>
+      <S.DownloadSection>
+        <h4>PDF Report</h4>
+        <p>Download monthly report</p>
+        <Button />
+      </S.DownloadSection>
+      <S.DarkMode>
+        <Switch label="light mode" />
+      </S.DarkMode>
     </S.Container>
   );
 };
