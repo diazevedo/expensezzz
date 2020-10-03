@@ -6,17 +6,16 @@ import { flex, FlexContainerCenter } from '../../styles/reusable';
 export const List = styled.ul`
   overflow: hidden;
   border-radius: 8px;
-  border-bottom: 1px #353b66 solid;
+  margin-top: 1.7rem;
 
   > li {
     ${flex};
     padding: 1.5rem 1.2rem;
-    margin-top: 10px;
     border-bottom: 1px #353b66 solid;
-  }
 
-  & li:last-child {
-    border: none;
+    &:last-child {
+      border: none;
+    }
   }
 `;
 

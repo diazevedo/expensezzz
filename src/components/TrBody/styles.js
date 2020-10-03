@@ -43,3 +43,7 @@ export const TDProfile = styled.td`
     }
   }
 `;
+
+export const TDAmountDate = styled.td`
+  font-family: 'Helvetica Neue', sans-serif;
+`;

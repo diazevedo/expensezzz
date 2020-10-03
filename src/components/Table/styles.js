@@ -6,6 +6,7 @@ export const Table = styled.table`
 
   & > * {
     color: #fffbfc;
+    font-size: 1.4rem;
   }
 
   & label {
@@ -21,6 +22,7 @@ export const Table = styled.table`
     text-transform: capitalize;
     height: 5rem;
     vertical-align: middle;
+    font-size: 1.4rem;
   }
 `;
 

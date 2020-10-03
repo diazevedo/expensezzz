@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+import { blueGradient } from '../../styles/reusable';
+
 export const Container = styled.aside`
   padding: 4rem 3rem;
   border-right: solid #e8e8e8 1px;
+  background: linear-gradient(
+    142deg,
+    rgba(39, 44, 86, 1) 0%,
+    rgba(51, 58, 109, 1) 100%
+  );
+  z-index: 1000;
 `;
 
 export const MenuContainer = styled.nav``;

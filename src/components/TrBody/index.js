@@ -16,8 +16,8 @@ function TrBody({ label, avatar, name, amount, date, state }) {
       <S.TDProfile>
         <ProfileCard avatar_url={avatar} name={name} />
       </S.TDProfile>
-      <td>{amount}</td>
-      <td>{date}</td>
+      <S.TDAmountDate>{amount}</S.TDAmountDate>
+      <S.TDAmountDate>{date}</S.TDAmountDate>
       <td>
         <Status state={state} />
       </td>

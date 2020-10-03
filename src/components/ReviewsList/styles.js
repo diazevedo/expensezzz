@@ -3,7 +3,7 @@ import { FlexContainerCenter } from '../../styles/reusable';
 
 export const List = styled.ul`
   border-top: 1px #353b66 solid;
-  padding: 1.2rem;
+  padding: 2rem;
 
   & * {
     font-family: 'Helvetica Neue', sans-serif;

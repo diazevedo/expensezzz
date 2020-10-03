@@ -3,7 +3,7 @@ import { INCOME } from './transactions';
 const payments = [
   {
     id: '01',
-    text: 'Card **** **** **** 5678',
+    text: 'Card **** **** **** 8588',
     date: '5 march, 18:33',
     amount: '+ 2,220',
     currency: 'USD',
@@ -11,7 +11,7 @@ const payments = [
   },
   {
     id: '02',
-    text: 'Card **** **** **** 5678',
+    text: 'Card **** **** **** 7845',
     date: '5 march, 18:33',
     amount: '+ 3,400',
     currency: 'USD',
@@ -19,7 +19,7 @@ const payments = [
   },
   {
     id: '03',
-    text: 'Card **** **** **** 5678',
+    text: 'Card **** **** **** 1045',
     date: '5 march, 18:33',
     amount: '+ 2,220',
     currency: 'USD',
@@ -35,7 +35,7 @@ const payments = [
   },
   {
     id: '05',
-    text: 'Card **** **** **** 5678',
+    text: 'Card **** **** **** 6575',
     date: '5 march, 18:33',
     amount: '+ 2,220',
     currency: 'USD',
@@ -43,7 +43,7 @@ const payments = [
   },
   {
     id: '06',
-    text: 'Card **** **** **** 5678',
+    text: 'Card **** **** **** 1048',
     date: '5 march, 18:33',
     amount: '+ 3,400',
     currency: 'USD',
@@ -51,7 +51,31 @@ const payments = [
   },
   {
     id: '07',
-    text: 'Card **** **** **** 5678',
+    text: 'Card **** **** **** 9987',
+    date: '5 march, 18:33',
+    amount: '+ 2,220',
+    currency: 'USD',
+    type: INCOME,
+  },
+  {
+    id: '08',
+    text: 'Card **** **** **** 1235',
+    date: '5 march, 18:33',
+    amount: '+ 2,220',
+    currency: 'USD',
+    type: INCOME,
+  },
+  {
+    id: '09',
+    text: 'Card **** **** **** 4256',
+    date: '5 march, 18:33',
+    amount: '+ 2,220',
+    currency: 'USD',
+    type: INCOME,
+  },
+  {
+    id: '10',
+    text: 'Card **** **** **** 1536',
     date: '5 march, 18:33',
     amount: '+ 2,220',
     currency: 'USD',
