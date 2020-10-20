@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signInRequest } from '../../store/modules/auth/actions';
 
 import logo from '../../assets/images/name.png';
-import history from '../../services/history';
 
 const SignIn = () => {
   const dispatch = useDispatch();

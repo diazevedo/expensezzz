@@ -76,5 +76,15 @@ export const Content = styled.div`
         transform: scale(1.1);
       }
     }
+
+    span {
+      font-size: 1.2rem;
+      color: rgb(125 26 72);
+      margin-bottom: 1rem;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
   }
 `;
