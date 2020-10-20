@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-import { blueGradient } from '../../styles/reusable';
-
 export const Container = styled.aside`
   padding: 4rem 3rem;
   border-right: solid #e8e8e8 1px;
@@ -67,7 +65,8 @@ export const Footer = styled.footer`
   width: 21.5rem;
   color: #9db1bc;
   text-align: center;
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 5rem;
   font-weight: 300;
-  bottom: 2.5rem;
+  /* bottom: 2.5rem; */
 `;

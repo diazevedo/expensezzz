@@ -6,7 +6,7 @@ import logo from '../../assets/images/name.png';
 import history from '../../services/history';
 
 const SignIn = () => {
-  const handleSubmitForm = () => history.push('debits');
+  const handleSubmitForm = () => history.push('dashboard');
 
   return (
     <>

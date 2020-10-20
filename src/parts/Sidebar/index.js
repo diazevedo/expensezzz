@@ -11,7 +11,7 @@ import items from '../../utils/data/navigationItems';
 const Sidebar = () => {
   return (
     <S.Container>
-      <Card value="$16,756.00" />
+      <Card value="$17,756.00" />
       <S.MenuContainer>
         <S.MenuList>
           {items.map(({ url, alt, label, image }) => (

@@ -45,7 +45,7 @@ export const Content = styled.div`
 
     input {
       text-align: center;
-      /* color: #1d84f8; */
+      background: #fff;
       color: #43424b;
 
       &:focus {
