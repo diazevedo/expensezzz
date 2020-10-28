@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
+
   background: linear-gradient(
-    115deg,
-    rgba(254, 109, 173, 1) 0%,
-    rgba(252, 159, 53, 1) 100%
+    142deg,
+    rgba(39, 44, 86, 1) 0%,
+    rgba(51, 58, 109, 1) 100%
   );
 
   display: flex;

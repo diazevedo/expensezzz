@@ -5,19 +5,10 @@ import { orangeGradient } from '../../styles/reusable';
 export const Tr = styled.tr`
   background: ${(props) =>
     props.selected === true ? orangeGradient : 'transparent'};
-  height: 7.5rem;
+  height: 7rem;
   border-bottom: 1px #353b66 solid;
 
   & td {
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  &:last-child {
-    border: none;
-  }
-
-  & > td {
     vertical-align: middle;
     text-align: center;
   }

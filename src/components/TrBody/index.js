@@ -5,7 +5,14 @@ import Status from '../../components/Status';
 
 import * as S from './styles';
 
-function TrBody({ label, avatar, name, amount, date, state }) {
+function TrBody({
+  label,
+  avatar = 'https://randomuser.me/api/portraits/men/0.jpg',
+  name,
+  amount,
+  date,
+  state,
+}) {
   const [selected, setSelected] = React.useState(false);
 
   return (
