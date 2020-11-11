@@ -20,15 +20,17 @@ const LastCosts = () => {
           <p>$100</p>
           <S.DottedLine></S.DottedLine>
         </S.Line>
-        <S.Chart>
-          {monthData.map(({ month, income, expenses }, index) => (
-            <S.MonthData key={month} index={index + 1}>
-              <S.Bars income={true} value={income} />
-              <S.Bars value={expenses} />
-              <S.MonthLabel>{month.substring(0, 3)}</S.MonthLabel>
-            </S.MonthData>
-          ))}
-        </S.Chart>
+        <S.ChartContainer>
+          <S.Chart>
+            {monthData.map(({ month, income, expenses }, index) => (
+              <S.MonthData key={month} index={index}>
+                <S.Bars income={true} value={income} />
+                <S.Bars value={expenses} />
+                <S.MonthLabel>{month.substring(0, 3)}</S.MonthLabel>
+              </S.MonthData>
+            ))}
+          </S.Chart>
+        </S.ChartContainer>
       </S.ChartContent>
     </S.Container>
   );

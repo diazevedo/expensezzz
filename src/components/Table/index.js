@@ -45,18 +45,19 @@ function Table({
         periodText={periodText}
         handlePreviousPeriod={handlePreviousPeriod}
         handleNextPeriod={handleNextPeriod}
+        periodEdit
       />
       {loadingBills ? (
         <p>Loading</p>
       ) : (
         <S.Table>
-          <thead>
+          <S.Header>
             <tr>
               {headers.map(({ text, key }) => (
                 <th key={key}>{text}</th>
               ))}
             </tr>
-          </thead>
+          </S.Header>
           <tbody>
             {content.map(({ id, creditor, amount, date }, index) => (
               <TrBody

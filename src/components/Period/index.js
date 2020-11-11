@@ -7,11 +7,11 @@ const Period = ({ text = 'text', handlePreviousPeriod, handleNextPeriod }) => {
   return (
     <S.Container>
       <button onClick={() => handlePreviousPeriod()}>
-        <img src={leftArrow} alt="previous period" />
+        <img src={leftArrow} alt="previous period" width="9" />
       </button>
       <p>{text}</p>
       <button onClick={() => handleNextPeriod()}>
-        <img src={rightArrow} alt="next period" />
+        <img src={rightArrow} alt="next period" width="9" />
       </button>
     </S.Container>
   );

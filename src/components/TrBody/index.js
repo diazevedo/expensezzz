@@ -17,17 +17,17 @@ function TrBody({
 
   return (
     <S.Tr selected={selected}>
-      <td>
+      <S.TD data-label="#">
         <Checkbox label={label} onCheck={() => setSelected((s) => !s)} />
-      </td>
-      <S.TDProfile>
+      </S.TD>
+      <S.TDProfile data-label="name">
         <ProfileCard avatar_url={avatar} name={name} />
       </S.TDProfile>
-      <S.TDAmountDate>{amount}</S.TDAmountDate>
-      <S.TDAmountDate>{date}</S.TDAmountDate>
-      <td>
+      <S.TDAmountDate data-label="amount">{amount}</S.TDAmountDate>
+      <S.TDAmountDate data-label="date">{date}</S.TDAmountDate>
+      <S.TD data-label="status">
         <Status state={state} />
-      </td>
+      </S.TD>
     </S.Tr>
   );
 }

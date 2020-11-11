@@ -6,6 +6,7 @@ export const Label = styled.label`
   width: 7rem;
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   & input:checked + span {
     background: #fff;

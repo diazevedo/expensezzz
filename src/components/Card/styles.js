@@ -12,7 +12,7 @@ export const Container = styled.div`
 
   color: #fff;
   box-shadow: 0px 30px 45px -25px rgba(252, 159, 53, 0.6);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 `;
 
 export const Text = styled.p`

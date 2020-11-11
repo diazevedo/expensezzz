@@ -8,9 +8,9 @@ import * as S from './styles';
 
 import items from '../../utils/data/navigationItems';
 
-const Sidebar = () => {
+const Sidebar = ({ menuOpened }) => {
   return (
-    <S.Container>
+    <S.Container isMenuOpened={menuOpened}>
       <Card value="$17,756.00" />
       <S.MenuContainer>
         <S.MenuList>

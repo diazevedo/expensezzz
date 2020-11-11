@@ -7,7 +7,8 @@ export const Header = styled.header`
 
   h2 {
     font-family: 'Mulish', sans-serif;
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
+    font-size: 2rem;
     color: #f6f6f8;
     font-weight: 600;
     text-transform: capitalize;

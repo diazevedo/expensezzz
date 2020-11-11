@@ -10,12 +10,16 @@ import * as S from './styles';
 
 const DefaultLayout = ({ children }) => {
   let location = useLocation();
+  const [menuOpened, setMenuOpened] = React.useState(false);
 
   return (
     <S.Wrapper>
-      <Sidebar />
+      <Sidebar menuOpened={menuOpened} />
       <ContainerMain>
-        <Header title={location.pathname.replace('/', '')} />
+        <Header
+          title={location.pathname.replace('/', '')}
+          handleCheckbox={setMenuOpened}
+        />
         {children}
       </ContainerMain>
     </S.Wrapper>

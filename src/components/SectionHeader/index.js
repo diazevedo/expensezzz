@@ -11,15 +11,19 @@ const SectionHeader = ({
   periodText,
   handlePreviousPeriod,
   handleNextPeriod,
+  periodEdit = false,
 }) => {
   return (
     <S.Header>
       <h2>{title}</h2>
-      <Period
-        text={periodText}
-        handlePreviousPeriod={handlePreviousPeriod}
-        handleNextPeriod={handleNextPeriod}
-      ></Period>
+      {periodEdit && (
+        <Period
+          text={periodText}
+          handlePreviousPeriod={handlePreviousPeriod}
+          handleNextPeriod={handleNextPeriod}
+        />
+      )}
+
       <button>
         <img src={menuDots} alt="Menu options" />
       </button>

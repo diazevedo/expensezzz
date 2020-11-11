@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const TFoot = styled.tfoot`
-  height: 50px;
+  height: 5rem;
 
   td {
     vertical-align: middle;
+
+    div {
+      padding: 1rem;
+    }
   }
 `;

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { device } from '../../styles/breakpoints';
+
 export const Table = styled.table`
   margin-top: 1.5rem;
   width: 100%;
@@ -10,19 +12,25 @@ export const Table = styled.table`
   }
 
   & label {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
+`;
 
-  & tr th:first-child {
-    text-indent: 6rem;
-    text-align: left;
-  }
+export const Header = styled.thead`
+  display: none;
 
-  th {
-    text-transform: capitalize;
-    height: 5rem;
-    vertical-align: middle;
-    font-size: 1.4rem;
+  @media ${device.mobileMedium} {
+    & tr th:first-child {
+      text-indent: 6rem;
+      text-align: left;
+    }
+
+    th {
+      text-transform: capitalize;
+      height: 5rem;
+      vertical-align: middle;
+      font-size: 1.4rem;
+    }
   }
 `;
 

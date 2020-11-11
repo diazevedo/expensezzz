@@ -21,6 +21,7 @@ const BaseCSS = createGlobalStyle`
     #root {
       height: 100%;
     }
+
   }
 
   body * {
