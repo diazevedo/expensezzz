@@ -8,7 +8,6 @@ export const Container = styled.header`
   padding: 1rem;
   width: 100%;
   ${flex};
-  /* background-color: #898; */
 
   h1 {
     font-size: 2.2rem;
@@ -34,7 +33,7 @@ export const MenuBurger = styled.label`
   ${(props) =>
     props.isMenuOpened &&
     css`
-      transform: translate(-15px, 7px);
+      transform: translate(0, 7px);
       position: fixed;
     `};
 

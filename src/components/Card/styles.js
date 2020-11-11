@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 2.8rem;
-  padding-right: 2.2rem;
+  /* padding: 2.8rem; */
+  padding: 1.5rem;
+  /* padding-right: 2.2rem; */
+  padding-right: 1.2rem;
   border-radius: 10px;
   background: linear-gradient(
     115deg,
@@ -16,7 +18,8 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.p`
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: 1.4rem;
   font-weight: 600;
   font-family: 'Mulish', sans-serif;
   text-transform: capitalize;
@@ -24,7 +27,8 @@ export const Text = styled.p`
 `;
 
 export const Amount = styled.p`
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: 2.5rem;
   font-weight: 600;
 
   &:first-letter {

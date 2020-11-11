@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { device } from '../../styles/breakpoints';
 
 export const Container = styled.aside`
-  padding: 1rem;
+  padding: 4rem 1rem 0;
   /* padding: 4rem 3rem;  */
 
   display: flex;
@@ -13,7 +13,7 @@ export const Container = styled.aside`
 
   /* float: left; */
   /* height: 100%; */
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 
   position: fixed;
@@ -26,6 +26,7 @@ export const Container = styled.aside`
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   z-index: 1000;
 
   transition: visibility 0.3s linear 0.3, opacity 0.3;
@@ -51,7 +52,7 @@ export const MenuList = styled.ul`
 
 export const ListItem = styled.li`
   /* padding: 1.2em 0; */
-  padding: 0.75em 0;
+  padding: 0.5em 0;
   text-transform: capitalize;
 
   display: flex;
@@ -81,10 +82,8 @@ export const Icon = styled.img`
 `;
 
 export const DownloadSection = styled.div`
-  margin-top: 8rem;
   /* margin-top: 4rem; */
-
-  background-color: #8787;
+  margin-top: 1.5rem;
 
   @media ${device.mobileMedium} {
     margin-top: 16rem;
@@ -97,14 +96,14 @@ export const DownloadSection = styled.div`
   }
 
   p {
-    margin-top: 1.5rem;
+    margin: 1rem 0;
     color: #a6a9b7;
   }
 `;
 
 export const DarkMode = styled.div`
   width: 21.5rem;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 `;
 
 export const Footer = styled.footer`
@@ -115,4 +114,7 @@ export const Footer = styled.footer`
   margin-top: 5rem;
   font-weight: 300;
   /* bottom: 2.5rem; */
+
+  position: absolute;
+  bottom: 1rem;
 `;
