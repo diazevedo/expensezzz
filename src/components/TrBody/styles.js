@@ -9,19 +9,19 @@ export const Tr = styled.tr`
   /* height: 7rem; */
   border-bottom: 1px #353b66 solid;
 
-  display: flex;
-  flex-direction: column;
+  @media ${device.laptop} {
+    border: 1px solid yellow;
 
-  @media ${device.mobileMedium} {
     & td {
       vertical-align: middle;
       text-align: center;
     }
 
-    & > td:first-child {
+    /* & > td:first-child {
       max-width: 1.8rem;
-    }
+    } */
 
+    /** status point  */
     & > td:last-child > span {
       margin-right: 3px;
     }
@@ -40,6 +40,12 @@ export const TD = styled.td`
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
   }
+
+  @media ${device.laptop} {
+    &:not(:first-child):before {
+      content: '';
+    }
+  }
 `;
 
 export const TDProfile = styled(TD)`
@@ -47,10 +53,21 @@ export const TDProfile = styled(TD)`
   display: flex;
   justify-content: space-between;
 
+  @media ${device.laptop} {
+    display: table-cell;
+  }
+
   & > div {
-    /* width: max-content; */
     img {
       display: none;
+    }
+
+    @media ${device.laptop} {
+      width: max-content;
+
+      img {
+        display: block;
+      }
     }
 
     & > p {

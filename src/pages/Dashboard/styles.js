@@ -10,16 +10,47 @@ export const Container = styled.div`
   }
 
   @media ${device.mobileMedium} {
-    max-width: 800px;
+    /* max-width: 800px; */
+  }
+
+  @media ${device.laptop} {
+    max-width: 98%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: [c-first] 34% [c-second] 34% [c-third] auto;
+
+    grid-template-rows: 215px auto auto;
+
+    & section:not(:first-child),
+    article {
+      margin-top: 0;
+    }
+
+    & section:first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    & section:nth-child(2) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+    }
+
+    & article {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
   }
 
   @media ${device.desktop} {
-    max-width: 800px;
+    /* max-width: 800px; */
 
-    display: grid;
     margin-top: 5rem;
 
-    grid-template-columns: [c-first] 74rem [c-second] 42rem [c-third] auto;
+    grid-template-columns: [c-first] 74rem [c-second] 42rem;
     grid-template-rows: 215px 240px 525px;
     grid-gap: 2.5rem;
 
@@ -69,8 +100,13 @@ export const Container = styled.div`
 export const Cards = styled.section`
   display: flex;
   margin-bottom: 2rem;
+  justify-content: space-between;
 
   & > div:first-child {
     margin-right: 2rem;
+  }
+
+  @media ${device.laptop} {
+    margin-bottom: 0;
   }
 `;

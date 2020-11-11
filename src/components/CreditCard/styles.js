@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import lines from '../../assets/images/card-background.svg';
+import { device } from '../../styles/breakpoints';
 
 export const Container = styled.div`
   width: 35.6rem;
@@ -25,6 +26,10 @@ export const Container = styled.div`
     height: 100%;
     background-image: url(${lines});
     opacity: 0.5;
+  }
+
+  @media ${device.laptop} {
+    height: 100%;
   }
 `;
 

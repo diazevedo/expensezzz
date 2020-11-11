@@ -85,8 +85,8 @@ export const MenuControl = styled.input.attrs({ type: 'checkbox' })`
 export const ContainerAvatarNotification = styled.div`
   ${flex};
 
-  @media ${device.mobileMedium} {
-    flex-basis: 25rem;
+  @media ${device.laptop} {
+    /* flex-basis: 25rem; */
   }
 `;
 

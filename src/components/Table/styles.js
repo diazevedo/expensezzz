@@ -32,6 +32,10 @@ export const Header = styled.thead`
       font-size: 1.4rem;
     }
   }
+
+  @media ${device.laptop} {
+    display: revert;
+  }
 `;
 
 export const TDProfile = styled.td`
