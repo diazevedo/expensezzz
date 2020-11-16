@@ -10,7 +10,7 @@ export const List = styled.ul`
 
   > li {
     ${flex};
-    padding: 1.5rem 1.2rem;
+    padding: 1.2rem 1.2rem;
     border-bottom: 1px #353b66 solid;
 
     &:last-child {

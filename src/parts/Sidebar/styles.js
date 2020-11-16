@@ -3,18 +3,14 @@ import { NavLink } from 'react-router-dom';
 import { device } from '../../styles/breakpoints';
 
 export const Container = styled.aside`
+  height: 100vh;
+  width: 100vw;
+
   padding: 4rem 1rem 0;
-  /* padding: 4rem 3rem;  */
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-
-  /* float: left; */
-  /* height: 100%; */
-  height: 100vh;
-  width: 100vw;
 
   position: fixed;
   overflow: hidden;
@@ -32,8 +28,12 @@ export const Container = styled.aside`
   transition: visibility 0.3s linear 0.3, opacity 0.3;
   visibility: ${(props) => (props.isMenuOpened ? 'visible' : 'hidden')};
 
-  @media ${device.mobileMedium} {
+  @media ${device.desktop} {
+    padding: 4rem 3rem;
     border-right: solid #e8e8e8 1px;
+    visibility: visible;
+    width: auto;
+    height: 100%;
   }
 `;
 
@@ -46,23 +46,35 @@ export const MenuContainer = styled.nav`
 export const MenuList = styled.ul`
   font-size: 2.2rem;
   margin-top: 1.5rem;
-  /* font-size: 1.4rem; */
   color: #a6a9b7;
+
+  @media ${device.desktop} {
+    font-size: 1.4rem;
+  }
 `;
 
 export const ListItem = styled.li`
-  /* padding: 1.2em 0; */
   padding: 0.5em 0;
   text-transform: capitalize;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
+  @media ${device.desktop} {
+    padding: 2.5rem 0;
+    justify-content: start;
+  }
 `;
 
 export const Link = styled(NavLink)`
   display: flex;
   align-items: center;
+  justify-content: center;
   color: inherit;
+
+  &:hover {
+    color: #fff;
+  }
 
   &.active {
     filter: invert(0%) sepia(92%) saturate(0%) hue-rotate(19deg)
@@ -74,7 +86,7 @@ export const Icon = styled.img`
   display: none;
   width: 1.8rem;
   height: 2rem;
-  margin-right: 1.2em;
+  margin-right: 1.8em;
 
   @media ${device.mobileMedium} {
     display: block;
@@ -82,11 +94,10 @@ export const Icon = styled.img`
 `;
 
 export const DownloadSection = styled.div`
-  /* margin-top: 4rem; */
   margin-top: 1.5rem;
 
-  @media ${device.mobileMedium} {
-    margin-top: 16rem;
+  @media ${device.laptop} {
+    margin-top: 7rem;
   }
 
   h4 {
@@ -98,23 +109,28 @@ export const DownloadSection = styled.div`
   p {
     margin: 1rem 0;
     color: #a6a9b7;
+
+    @media ${device.laptop} {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
 export const DarkMode = styled.div`
   width: 21.5rem;
-  /* margin-top: 5rem; */
+
+  @media ${device.laptop} {
+    margin-top: 4rem;
+  }
 `;
 
 export const Footer = styled.footer`
   width: 21.5rem;
   color: #9db1bc;
   text-align: center;
-  /* position: absolute; */
-  margin-top: 5rem;
   font-weight: 300;
-  /* bottom: 2.5rem; */
+  margin-top: 5rem;
 
-  position: absolute;
-  bottom: 1rem;
+  /* position: absolute; */
+  /* bottom: 1.5rem; */
 `;

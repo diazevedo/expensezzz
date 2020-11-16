@@ -11,15 +11,18 @@ export const Table = styled.table`
     font-size: 1.4rem;
   }
 
-  & label {
-    /* margin-left: 2rem; */
+  @media ${device.laptop} {
+    & label {
+      /** to control left margin of the checkbox */
+      margin-left: 2rem;
+    }
   }
 `;
 
 export const Header = styled.thead`
   display: none;
 
-  @media ${device.mobileMedium} {
+  @media ${device.laptop} {
     & tr th:first-child {
       text-indent: 6rem;
       text-align: left;

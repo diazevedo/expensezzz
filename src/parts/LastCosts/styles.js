@@ -4,8 +4,7 @@ import { orangeGradient, blueGradient } from '../../styles/reusable';
 
 export const Container = styled.article`
   width: 100%;
-  /* max-width: 41.5rem; */
-  height: 21rem;
+  height: 100%;
   border: 1px #353b66 solid;
   border-radius: 8px;
   padding: 1.2rem 0;
@@ -38,12 +37,11 @@ export const Label = styled.p`
 `;
 
 export const ChartContent = styled.div`
-  /* width: 38.5rem; */
   width: 100%;
   height: 11.5rem;
+
   margin: 0 auto;
   padding: 0 1.2rem;
-  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -77,26 +75,17 @@ export const ChartContainer = styled.div`
 `;
 
 export const Chart = styled.div`
-  /* position: absolute; */
-
-  /* width: 85%; */
-
   width: 100%;
   height: 100%;
-  /* margin-right: 8px; */
-  /* right: 35px; */
-  /* left: 0; */
-
   font-size: 1.2rem;
 
-  /* border: px solid #000; */
   &:after {
     content: '';
     width: 100%;
 
     border-bottom: 1px solid #5c659d;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
   }
 `;
@@ -108,12 +97,9 @@ export const MonthData = styled.div`
   width: 20%;
 
   text-align: center;
-  /* background-color: white; */
 `;
 
 export const Bars = styled.div`
-  /* width: 1.9rem; */
-  /* width: 1.5rem; */
   width: 25%;
   height: ${(props) => `${props.value}px`};
   background: ${(props) => (props.income ? blueGradient : orangeGradient)};
@@ -123,5 +109,4 @@ export const Bars = styled.div`
 
 export const MonthLabel = styled.p`
   margin-top: 1rem;
-  /* text-align: center; */
 `;

@@ -15,10 +15,9 @@ export const Container = styled.header`
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
     text-transform: capitalize;
-  }
 
-  @media ${device.mobileMedium} {
-    h1 {
+    @media ${device.desktop} {
+      font-size: 3.2rem;
     }
   }
 `;
@@ -38,6 +37,10 @@ export const MenuBurger = styled.label`
     `};
 
   transition: all 0.35s ease-in;
+
+  @media ${device.desktop} {
+    display: none;
+  }
 `;
 
 export const Span = styled.span`
@@ -63,6 +66,13 @@ export const Span = styled.span`
     background: #fff;
     transition: all 0.35s ease-out;
   }
+  @media ${device.desktop} {
+    &,
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
 
   &::before {
     top: ${(props) => (!props.isMenuOpened ? '-1rem' : '0')};
@@ -86,7 +96,7 @@ export const ContainerAvatarNotification = styled.div`
   ${flex};
 
   @media ${device.laptop} {
-    /* flex-basis: 25rem; */
+    flex-basis: 25rem;
   }
 `;
 
@@ -101,7 +111,7 @@ export const Notification = styled.button`
 
   display: none;
 
-  @media ${device.mobileMedium} {
-    display: none;
+  @media ${device.laptop} {
+    display: block;
   }
 `;

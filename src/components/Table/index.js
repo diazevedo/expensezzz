@@ -29,15 +29,39 @@ const headers = [
 function Table({
   content,
   periodText,
-  trs = headers,
   title = 'income',
   handlePreviousPeriod,
   handleNextPeriod,
   loadingBills,
-  page,
-  handlePreviousPage,
-  handleNextPage,
 }) {
+  const [page, setPage] = React.useState(0);
+
+  /** temporarily  range*/
+  const RANGE_OF_START = React.useMemo(
+    () => [0, 9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 100],
+    []
+  );
+
+  const handlePreviousPage = () => {
+    if (page === 0) return;
+
+    setPage((previousPage) => previousPage - 1);
+  };
+
+  const handleNextPage = () => {
+    if (content.length <= RANGE_OF_START[page + 1]) return;
+
+    setPage((previousPage) => previousPage + 1);
+  };
+
+  const [data, setData] = React.useState([]);
+
+  React.useEffect(() => {
+    setData(() =>
+      content.slice(RANGE_OF_START[page], RANGE_OF_START[page + 1])
+    );
+  }, [page, content, RANGE_OF_START]);
+
   return (
     <Section>
       <SectionHeader
@@ -59,7 +83,7 @@ function Table({
             </tr>
           </S.Header>
           <tbody>
-            {content.map(({ id, creditor, amount, date }, index) => (
+            {data.map(({ id, creditor, amount, date }, index) => (
               <TrBody
                 key={id}
                 label={`DC${index.toString().padStart(2, 0)}`}
@@ -71,7 +95,7 @@ function Table({
             ))}
           </tbody>
           <TFoot
-            page={page}
+            page={page + 1}
             handlePreviousPage={handlePreviousPage}
             handleNextPage={handleNextPage}
           />

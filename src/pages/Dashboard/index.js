@@ -16,13 +16,11 @@ import formatBills from '../../utils/functions/formatBill';
 
 const Dashboard = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [page, setPage] = useState(1);
 
   const [bills, , loadingBills] = useFetch({
     url: useMemo(() => '/bills', []),
-    options: useMemo(() => ({ range: 'week', date: currentDate, page }), [
+    options: useMemo(() => ({ range: 'week', date: currentDate }), [
       currentDate,
-      page,
     ]),
     callback: useCallback((bills) => formatBills(bills), []),
   });
@@ -44,19 +42,6 @@ const Dashboard = () => {
     });
 
     setCurrentDate(newDate);
-  };
-
-  const handlePreviousPage = () => {
-    console.log('pppp');
-    if (page === 1) {
-      return;
-    }
-
-    setPage((previousPage) => previousPage - 1);
-  };
-
-  const handleNextPage = () => {
-    setPage((previousPage) => previousPage + 1);
   };
 
   React.useEffect(() => {
@@ -88,9 +73,6 @@ const Dashboard = () => {
         handleNextPeriod={handleNextBillPeriod}
         handlePreviousPeriod={handlePreviousBillPeriod}
         loadingBills={loadingBills}
-        page={page}
-        handleNextPage={handleNextPage}
-        handlePreviousPage={handlePreviousPage}
       />
 
       <LastCosts />

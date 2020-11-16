@@ -1,14 +1,13 @@
 import styled from 'styled-components';
+import { device } from '../../../styles/breakpoints';
 
 export const Wrapper = styled.div`
   height: 100%;
   width: 100vw;
 
-  /*
-  aside {
-    float: left;
-    height: 100%;
-    overflow: hidden;
-    position: fixed;
-  } */
+  main {
+    @media ${device.desktop} {
+      margin-left: 28.5rem;
+    }
+  }
 `;

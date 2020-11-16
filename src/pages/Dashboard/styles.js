@@ -9,8 +9,8 @@ export const Container = styled.div`
     margin-top: 2rem;
   }
 
-  @media ${device.mobileMedium} {
-    /* max-width: 800px; */
+  & section:not(:first-child) {
+    height: max-content;
   }
 
   @media ${device.laptop} {
@@ -19,39 +19,47 @@ export const Container = styled.div`
 
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: [c-first] 34% [c-second] 34% [c-third] auto;
+    grid-template-columns:
+      [c-first] minmax(45%, 74rem) [c-second] 25%
+      [c-third] auto;
 
-    grid-template-rows: 215px auto auto;
+    grid-template-rows: 215px 250px auto;
 
     & section:not(:first-child),
     article {
       margin-top: 0;
     }
 
-    & section:first-child {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
+    //** table */
     & section:nth-child(2) {
       grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-end: 2;
       grid-row-start: 2;
+      grid-row-end: 3;
     }
 
+    /** chart */
     & article {
-      grid-column-start: 3;
+      grid-column-start: 2;
       grid-row-start: 1;
+    }
+
+    /** payment history */
+    & section:nth-child(5) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    /** recent views */
+    & section:nth-child(6) {
+      grid-row-start: 3;
+      grid-column-start: 3;
     }
   }
 
   @media ${device.desktop} {
-    /* max-width: 800px; */
-
     margin-top: 5rem;
-
-    grid-template-columns: [c-first] 74rem [c-second] 42rem;
-    grid-template-rows: 215px 240px 525px;
+    grid-template-rows: 215px 240px auto;
     grid-gap: 2.5rem;
 
     /** table*/
@@ -93,6 +101,7 @@ export const Container = styled.div`
 
     & section:nth-child(6) {
       margin-top: -5px;
+      grid-row-start: 3;
     }
   }
 `;
@@ -108,5 +117,8 @@ export const Cards = styled.section`
 
   @media ${device.laptop} {
     margin-bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
   }
 `;
